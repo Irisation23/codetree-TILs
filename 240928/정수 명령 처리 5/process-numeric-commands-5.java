@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         int n = nextInt();
-        MyList myList = new MyList(new ArrayList<Integer>());
+        MyList myList = new MyList(new LinkedList<Integer>());
 
         for (int i = 0; i < n; i++) {
             String st1 = next();
@@ -49,6 +49,7 @@ class MyList {
     }
 
     public void push_backA(int value) {
+        
         list.add(list.size(), value);
     }
 
