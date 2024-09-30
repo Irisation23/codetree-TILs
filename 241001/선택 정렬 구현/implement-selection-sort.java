@@ -14,9 +14,9 @@ public class Main {
             selectArray[i] = nextInt();
         }
 
-        int min = 0;
         int tmp = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n - 1; i++) {
+            int min = i;
             for (int j = i + 1; j < n; j++) {
                 if (selectArray[j] < selectArray[min]) {
                     min = j;
