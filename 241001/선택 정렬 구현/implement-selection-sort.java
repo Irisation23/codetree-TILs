@@ -21,11 +21,11 @@ public class Main {
                 if (selectArray[j] < selectArray[min]) {
                     min = j;
                 }
-                
-                tmp = selectArray[i];
-                selectArray[i] = selectArray[min];
-                selectArray[min] = tmp;
             }
+
+            tmp = selectArray[i];
+            selectArray[i] = selectArray[min];
+            selectArray[min] = tmp;
         }
 
         for (int i : selectArray) {
