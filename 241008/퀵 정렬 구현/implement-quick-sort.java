@@ -15,6 +15,10 @@ public class Main {
         }
 
         quickSort(quickArray, 0, quickArray.length - 1);
+
+        for (int i : quickArray) {
+            System.out.print(i + " ");
+        }
     }
 
     private static void quickSort(int[] quickArray, int low, int high) {
@@ -55,10 +59,10 @@ public class Main {
     }
 
     public static String next() {
-        while(st == null || !st.hasMoreElemnts()) {
+        while(st == null || !st.hasMoreElements()) {
             try {
                 st = new StringTokenizer(reader.readLine());
-            } catch (IOExcetpion e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
