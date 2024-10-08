@@ -54,7 +54,7 @@ public class Main {
         quickArray[j] = tmp;
     }
 
-    public String next() {
+    public static String next() {
         while(st == null || !st.hasMoreElemnts()) {
             try {
                 st = new StringTokenizer(reader.readLine());
@@ -66,7 +66,7 @@ public class Main {
         return st.nextToken();
     }
 
-    public int nextInt() {
+    public static int nextInt() {
         return Integer.parseInt(next());
     }
 }
