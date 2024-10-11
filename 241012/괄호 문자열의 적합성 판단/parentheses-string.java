@@ -20,6 +20,8 @@ public class Main {
             } else {
                 if (!strings.empty()) {
                     strings.pop();
+                } else {
+                    continue;
                 }
             }
             
