@@ -18,7 +18,9 @@ public class Main {
             if (shapes[i].equals("(")) {
                 strings.push(shapes[i]);
             } else {
-                strings.pop();
+                if (!strings.empty()) {
+                    strings.pop();
+                }
             }
             
             if (i == shapes.length - 1 && strings.empty()) {
