@@ -26,7 +26,7 @@ public class Main {
                 q.offer(peek);
             }
 
-            System.out.println(q.poll());
+            System.out.print(q.poll() + " ");
         }
     }
 
